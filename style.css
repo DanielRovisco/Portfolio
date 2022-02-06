@@ -440,10 +440,32 @@ h1 {
   gap: 0.3rem;
 }
 
+.workpage .content-side .work-display .work1 {
+  background-image: url(./images/photowork/maskoff.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.workpage .content-side .work-display .work2 {
+  background-image: url(./images/photowork/Toxicity.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.workpage .content-side .work-display .work3 {
+  background-image: url(./images/photowork/Baja2021.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .workpage .content-side .work-display .work {
-  border: 1px solid #525252;
-  width: 100%;
-  height: 100%;
+  width: 15rem;
+  height: 15rem;
+  cursor: pointer;
+  position: relative;
 }
 
 .workpage .text-side {

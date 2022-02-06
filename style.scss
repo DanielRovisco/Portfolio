@@ -343,10 +343,29 @@ h1 {
       width: 80%;
       height: 80%;
       gap: 0.3rem;
+      .work1 {
+        background-image: url(./images/photowork/maskoff.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .work2 {
+        background-image: url(./images/photowork/Toxicity.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .work3 {
+        background-image: url(./images/photowork/Baja2021.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
       .work {
-        border: 1px solid rgb(82, 82, 82);
-        width: 100%;
-        height: 100%;
+        width: 15rem;
+        height: 15rem;
+        cursor: pointer;
+        position: relative;
       }
     }
   }
