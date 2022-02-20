@@ -326,8 +326,7 @@ h1 {
 }
 
 .homepage .all-jobs-wrap .job:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  background-color: #222222;
 }
 
 .homepage .all-jobs-wrap .job i {
@@ -368,6 +367,8 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
 }
 
 .aboutpage .text-side h1 {
@@ -466,8 +467,8 @@ h1 {
 }
 
 .workpage .content-side .work-display .work {
-  width: 15rem;
-  height: 15rem;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   position: relative;
 }
@@ -660,7 +661,7 @@ h1 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  z-index: 3;
+  z-index: 5;
   cursor: pointer;
 }
 
@@ -690,6 +691,7 @@ h1 {
   transition: all 0.3s;
   -webkit-transform: translateX(-500px);
           transform: translateX(-500px);
+  z-index: 3;
 }
 
 .menu-page .links {
@@ -760,6 +762,15 @@ h1 {
   .homepage .nav-bar .nav-links {
     display: none;
   }
+  .menu-page {
+    width: 25%;
+  }
+  .menu-page .links {
+    font-size: 0.9rem;
+  }
+  .menu-page .socials i {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -794,6 +805,18 @@ h1 {
     display: -ms-flexbox;
     display: flex;
   }
+  .menu-page {
+    width: 25%;
+  }
+  .menu-page .links {
+    font-size: 0.7rem;
+  }
+  .menu-page .socials {
+    gap: 1rem;
+  }
+  .menu-page .socials i {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -810,6 +833,18 @@ h1 {
   }
   .aboutpage .text-side h3 {
     width: 95%;
+  }
+  .menu-page {
+    width: 35%;
+  }
+  .menu-page .links {
+    font-size: 0.7rem;
+  }
+  .menu-page .socials {
+    gap: 1rem;
+  }
+  .menu-page .socials i {
+    font-size: 1.5rem;
   }
 }
 
@@ -878,6 +913,18 @@ h1 {
   }
   .contactpage .form textarea {
     width: 100%;
+  }
+  .menu-page {
+    width: 45%;
+  }
+  .menu-page .links {
+    font-size: 0.6rem;
+  }
+  .menu-page .socials {
+    gap: 1rem;
+  }
+  .menu-page .socials i {
+    font-size: 1.3rem;
   }
 }
 
@@ -960,6 +1007,237 @@ h1 {
   }
   .contactpage .form textarea {
     width: 100%;
+  }
+  .menu-page {
+    width: 50%;
+  }
+  .menu-page .links {
+    font-size: 0.6rem;
+  }
+  .menu-page .socials {
+    gap: 1rem;
+  }
+  .menu-page .socials i {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .homepage .main-content .name {
+    font-size: 1.5rem;
+  }
+  .homepage .main-content .what-i-do {
+    font-size: 3rem;
+  }
+  .homepage .main-content .desc {
+    font-size: 1rem;
+  }
+  .homepage .all-jobs-wrap {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .all-jobs-wrap .job {
+    height: 20vh;
+    width: 15rem;
+  }
+  .aboutpage {
+    width: 100%;
+  }
+  .aboutpage .text-side {
+    width: 90%;
+  }
+  .aboutpage .text-side h3 {
+    width: 100%;
+  }
+  .workpage {
+    width: 100%;
+  }
+  .workpage .text-side {
+    width: 90%;
+  }
+  .workpage .text-side h3 {
+    width: 100%;
+  }
+  .workpage .content-side {
+    width: 95%;
+  }
+  .workpage .content-side .selector-wrap {
+    gap: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .workpage .content-side .selector-wrap .selector {
+    -webkit-transform: translateX(-134px);
+            transform: translateX(-134px);
+    width: 7.5rem;
+  }
+  .workpage .content-side .selector-wrap p {
+    font-size: 0.8rem;
+  }
+  .workpage .content-side .work-display {
+    width: 100%;
+  }
+  .contactpage h1 {
+    font-size: 2rem;
+  }
+  .contactpage .form {
+    width: 70%;
+  }
+  .contactpage .form .name-and-email {
+    padding-top: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .contactpage .form .name-and-email input {
+    width: 50%;
+  }
+  .contactpage .form .message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactpage .form textarea {
+    width: 100%;
+  }
+  .menu-page {
+    width: 100%;
+  }
+  .menu-page .links {
+    font-size: 0.6rem;
+  }
+  .menu-page .socials {
+    gap: 1rem;
+  }
+  .menu-page .socials i {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .homepage .main-content .name {
+    font-size: 1rem;
+  }
+  .homepage .main-content .what-i-do {
+    font-size: 2rem;
+  }
+  .homepage .main-content .desc {
+    font-size: 1rem;
+  }
+  .homepage .all-jobs-wrap {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage .all-jobs-wrap .job {
+    height: 20vh;
+    width: 15rem;
+  }
+  .aboutpage {
+    width: 100%;
+  }
+  .aboutpage .text-side {
+    width: 90%;
+  }
+  .aboutpage .text-side h3 {
+    width: 100%;
+  }
+  .workpage {
+    width: 100%;
+  }
+  .workpage .text-side {
+    width: 90%;
+  }
+  .workpage .text-side h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .workpage .content-side {
+    width: 95%;
+  }
+  .workpage .content-side .selector-wrap {
+    gap: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .workpage .content-side .selector-wrap .selector {
+    display: none;
+  }
+  .workpage .content-side .selector-wrap p {
+    font-size: 0.8rem;
+    border-radius: 20px;
+  }
+  .workpage .content-side .selector-wrap p:focus {
+    -webkit-box-shadow: 0 0 10px white;
+            box-shadow: 0 0 10px white;
+  }
+  .workpage .content-side .work-display {
+    width: 100%;
+  }
+  .contactpage h1 {
+    font-size: 1.5rem;
+  }
+  .contactpage .form {
+    width: 70%;
+  }
+  .contactpage .form .name-and-email {
+    padding-top: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .contactpage .form .name-and-email input {
+    font-size: 1rem;
+    width: 50%;
+  }
+  .contactpage .form .message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactpage .form .message i {
+    font-size: 1.5rem;
+  }
+  .contactpage .form textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .menu-page {
+    width: 100%;
+  }
+  .menu-page .links {
+    font-size: 0.6rem;
+  }
+  .menu-page .socials {
+    gap: 1rem;
+  }
+  .menu-page .socials i {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

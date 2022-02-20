@@ -66,8 +66,6 @@ function openBurger(e) {
   isBurgerOpen = !isBurgerOpen;
 
   if (isBurgerOpen) {
-    console.log("open");
-
     menuPage.style.transform = "translateX(0)";
     burgerTop.style.backgroundColor = "black";
     burgerMid.style.backgroundColor = "black";
@@ -77,7 +75,6 @@ function openBurger(e) {
     burgerMid.style.display = "none";
     burger.style.display = "block";
   } else {
-    console.log("closed");
     menuPage.style.transform = "translateX(-500px)";
     burgerTop.style.backgroundColor = "white";
     burgerMid.style.backgroundColor = "white";
@@ -122,6 +119,84 @@ function selectWork(e) {
       selectorDiv.style.width = "10rem";
     }
   }
+
+  if (window.innerWidth <= 420) {
+    if (workArea.classList.contains("photo")) {
+      selectorDiv.style.transform = "translateX(-134px)";
+      selectorDiv.style.width = "7rem";
+      selectorDiv.style.height = "1.5rem";
+    } else if (workArea.classList.contains("video")) {
+      selectorDiv.style.transform = "translateX(-15px)";
+      selectorDiv.style.height = "1.5rem";
+      selectorDiv.style.width = "7rem";
+    } else if (workArea.classList.contains("webdev")) {
+      selectorDiv.style.transform = "translateX(99px)";
+      selectorDiv.style.width = "7rem";
+      selectorDiv.style.height = "2rem";
+    }
+  }
+
+  if (window.innerWidth <= 414) {
+    if (workArea.classList.contains("photo")) {
+      selectorDiv.style.transform = "translateX(-128px)";
+      selectorDiv.style.width = "7rem";
+      selectorDiv.style.height = "1.5rem";
+    } else if (workArea.classList.contains("video")) {
+      selectorDiv.style.transform = "translateX(-13px)";
+      selectorDiv.style.height = "1.5rem";
+      selectorDiv.style.width = "7rem";
+    } else if (workArea.classList.contains("webdev")) {
+      selectorDiv.style.transform = "translateX(102px)";
+      selectorDiv.style.width = "7rem";
+      selectorDiv.style.height = "2rem";
+    }
+  }
+
+  if (window.innerWidth <= 404) {
+    if (workArea.classList.contains("photo")) {
+      selectorDiv.style.transform = "translateX(-124px)";
+      selectorDiv.style.width = "7rem";
+      selectorDiv.style.height = "1.5rem";
+    } else if (workArea.classList.contains("video")) {
+      selectorDiv.style.transform = "translateX(-5px)";
+      selectorDiv.style.height = "1.5rem";
+      selectorDiv.style.width = "7rem";
+    } else if (workArea.classList.contains("webdev")) {
+      selectorDiv.style.transform = "translateX(108px)";
+      selectorDiv.style.width = "7rem";
+      selectorDiv.style.height = "2rem";
+    }
+  }
+  if (window.innerWidth <= 375) {
+    if (workArea.classList.contains("photo")) {
+      selectorDiv.style.transform = "translateX(-116px)";
+      selectorDiv.style.width = "7rem";
+      selectorDiv.style.height = "1.5rem";
+    } else if (workArea.classList.contains("video")) {
+      selectorDiv.style.transform = "translateX(2px)";
+      selectorDiv.style.height = "1.5rem";
+      selectorDiv.style.width = "7rem";
+    } else if (workArea.classList.contains("webdev")) {
+      selectorDiv.style.transform = "translateX(116px)";
+      selectorDiv.style.width = "7rem";
+      selectorDiv.style.height = "2rem";
+    }
+  }
+  if (window.innerWidth <= 320) {
+    if (workArea.classList.contains("photo")) {
+      selectorDiv.style.transform = "translateX(-116px)";
+      selectorDiv.style.width = "7rem";
+      selectorDiv.style.height = "1.5rem";
+    } else if (workArea.classList.contains("video")) {
+      selectorDiv.style.transform = "translateX(2px)";
+      selectorDiv.style.height = "1.5rem";
+      selectorDiv.style.width = "7rem";
+    } else if (workArea.classList.contains("webdev")) {
+      selectorDiv.style.transform = "translateX(116px)";
+      selectorDiv.style.width = "7rem";
+      selectorDiv.style.height = "2rem";
+    }
+  }
 }
 
 /*********************
@@ -130,8 +205,19 @@ TIME LINE
 const tl = gsap.timeline({ defaults: { ease: Power1.easeIn } });
 tl.to(".name", { opacity: "100%", duration: 1.5 });
 tl.to(".what-i-do", { opacity: "100%", duration: 1.5 }, "-=1.5");
-tl.to(".job", { y: "0%", duration: 0.5 }, "-=1.5");
-
+tl.to(".job", { y: "1%", duration: 0.5 }, "-=1.5");
 /*********************
 SCROLL EFFECT
 **********************/
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(".about-text", {
+  scrollTrigger: {
+    trigger: ".about-text",
+    toggleActions: "play none none none",
+
+    scrub: true,
+    end: "center center",
+  },
+  x: 0,
+  duration: 2,
+});
