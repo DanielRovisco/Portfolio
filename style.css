@@ -248,10 +248,12 @@ h1 {
 
 .homepage .main-content .name {
   font-size: 1.8rem;
+  opacity: 0;
 }
 
 .homepage .main-content .what-i-do {
   font-size: 3.5rem;
+  opacity: 0;
 }
 
 .homepage .main-content .desc {
@@ -266,7 +268,7 @@ h1 {
   width: fit-content;
   margin: 0 auto;
   margin-top: 1rem;
-  border-radius: 25px;
+  border-radius: 10px;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
   cursor: pointer;
@@ -319,6 +321,8 @@ h1 {
   gap: 1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .homepage .all-jobs-wrap .job:hover {

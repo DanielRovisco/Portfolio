@@ -213,9 +213,11 @@ h1 {
 
     .name {
       font-size: 1.8rem;
+      opacity: 0;
     }
     .what-i-do {
       font-size: 3.5rem;
+      opacity: 0;
     }
     .desc {
       font-size: 1.2rem;
@@ -227,7 +229,7 @@ h1 {
       width: fit-content;
       margin: 0 auto;
       margin-top: 1rem;
-      border-radius: 25px;
+      border-radius: 10px;
       transition: all ease 0.3s;
       cursor: pointer;
       &:hover {
@@ -262,6 +264,7 @@ h1 {
       padding: 2rem;
       gap: 1rem;
       transition: all 0.3s;
+      transform: translateY(50%);
       &:hover {
         transform: scale(1.03);
       }

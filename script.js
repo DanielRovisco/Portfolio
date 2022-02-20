@@ -10,6 +10,7 @@ burgerBot = document.querySelector(".bar-bot");
 menuPage = document.querySelector(".menu-page");
 selectorWrap = document.querySelector(".selector-wrap");
 selectorDiv = document.querySelector(".selector");
+jobCard = document.querySelectorAll(".job");
 isBurgerOpen = false;
 
 /**************
@@ -122,3 +123,15 @@ function selectWork(e) {
     }
   }
 }
+
+/*********************
+TIME LINE 
+**********************/
+const tl = gsap.timeline({ defaults: { ease: Power1.easeIn } });
+tl.to(".name", { opacity: "100%", duration: 1.5 });
+tl.to(".what-i-do", { opacity: "100%", duration: 1.5 }, "-=1.5");
+tl.to(".job", { y: "0%", duration: 0.5 }, "-=1.5");
+
+/*********************
+SCROLL EFFECT
+**********************/
